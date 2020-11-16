@@ -3,7 +3,7 @@ Chataigne and TouchOSC example of DS100 Module usage. Now include also CL/QL lin
 
 A simple interface to act as a "side-car" mixing console Soundscape sound object controler.
 
-How to setup ?
+## How to setup ?
 Of course, IP of DS100 device should be setup accordingly.
 Also, please check that in TouchOSC the "Connections" OSC IP adress correspond to Chataigne one, and the other way around in Chataigne TouchOSC module send commands to Ipad IP.
 
