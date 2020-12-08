@@ -1,5 +1,7 @@
 # Noisette_TouchOSC-DS100
-Chataigne and TouchOSC example of DS100 Module usage. 
+A simple interface to act as a "side-car" for CL5 mixing console with Soundscape sound object controler.
+
+Example of DS100 Module usage.
 First version ("TouchOSC-DS100-CL5_Oct2020") is in zip archive with corresponding previous version of DS100 OSC module included. It has been tested and works usually without loop issue, but by slowing down a lot Rx of parameters (pause for 10x the update rate period settings, by default (20Hz) it means an update on TouchOSC Rx twice a second). With very slow Rx (usually because of WIFI latency, if it takes more than 0.5s to receive values from DS100 to TouchOSC), it still may oscillate.
 
 For latest DS100 OSC module, I've review the example noisette also, it is now including also CL/QL link as another example.
@@ -13,9 +15,6 @@ If you want to work with me on that issue, welcome ! Please join the Chataigne D
 
 BEFORE THAT I WILL STRONGLY AVOID TO USE IT ON PRODUCTION !!!
 Anyway you can stop/avoid infinite loops manually by de-activating "DS100>TouchOSC mappings", especially if you're most interrested in one way TouchOSC>DS100, or the Yamaha CL/QL part of the noisette.
-
-
-A simple interface to act as a "side-car" for CL5 mixing console with Soundscape sound object controler.
 
 ## How to setup ?
 Of course, IP of DS100 device should be setup accordingly.
