@@ -1,6 +1,6 @@
 # Noisette_TouchOSC-DS100
 Chataigne and TouchOSC example of DS100 Module usage. 
-v1 is in zip archive with corresponding previous version of DS100 OSC module included. It works without loop issue, but by slowing down a lot Rx of parameters (pause for 10x the update rate period settings). With very slow Rx (usually because of WIFI latency), it still may oscillate.
+First version ("TouchOSC-DS100-CL5_Oct2020") is in zip archive with corresponding previous version of DS100 OSC module included. It has been tested and works usually without loop issue, but by slowing down a lot Rx of parameters (pause for 10x the update rate period settings, by default (20Hz) it means an update on TouchOSC Rx twice a second). With very slow Rx (usually because of WIFI latency, if it takes more than 0.5s to receive values from DS100 to TouchOSC), it still may oscillate.
 
 For latest DS100 OSC module, I've review the example noisette also, it is now including also CL/QL link as another example.
 Mapping is done only for CHANNEL 1 as proof of concept, but you may easily copy paste the state container and adapt to other channels depending of your application.
@@ -8,7 +8,7 @@ The Chatainge CL/QL module used is included, and differs from official l-r-r dis
 You should just setup the Yammie in surround mode to have channels surround panner parameters sent to DS100 by OSC (ONE WAY ONLY, Yammie>DS100).
 
 WARNING: this new version can self oscillate (feedback with bi directionnal TouchOSC module mappings), depending on network speeds (when the Rx values feedback from DS100 are received in Chataigne, map back to TouchOSC (usually WIFI speed) AFTER a new values is sent by TouchOSC, the Noisette may oscillate infinitely between those two values).
-I'm working on it, as I want to have this loop restriction included into the noisette instead of in the module as previously made in V1 (so for others projects that don't need bi-directionnal loops, it doesn't slow the communication of the DS100 OSC module).
+I'm working on it, as I want to have this loop restriction smarter and included into the noisette instead of in the module as previously made in V1 (so for others projects that don't need bi-directionnal loops, it doesn't slow the communication of the DS100 OSC module, and user may adapt the Rx pause accordingly to their network performance).
 If you want to work with me on that issue, welcome ! Please join the Chataigne Discord.
 
 BEFORE THAT I WILL STRONGLY AVOID TO USE IT ON PRODUCTION !!!
