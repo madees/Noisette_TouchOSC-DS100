@@ -29,6 +29,7 @@ Minimum update rate of 1 means 1 to 2 second pause, slows a lot Rx but very safe
 10. In Chataigne CL/QL Module, "Remote Host" output set to the console remote IP.
 
 A first mappings container "CL>DS100" is provided, it gather "Last Cue" as channel selection on TouchOSC, "Mono output fader" mapped to DS100 master output level (WARNING: it ovewrite all DS100 output levels! turn it off if you think it isn't a good idea).
+
 Another mappings container send surround paner channel parameters to one object (only setup with channel #1, for proof of concept, you can copy paste the State container and adapt channel numbers to add more simultaneous channels control from console surround panners).
 
 Yamaha CL/QL Chataigne module is based on https://github.com/l-r-r/Yamaha-CLQL-Chataigne-Module, adapted to add last cue and input channels surround panner parameters.
