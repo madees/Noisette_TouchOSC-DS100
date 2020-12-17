@@ -38,5 +38,6 @@ Please check that the Chataigne CL/QL module is using correct console model and 
 ## More to come
 User defined 4x Push, 4x Toggle, 1 fader are there to add more Chataigne control. Not done in the file, but typically to activate Generators mapped to sound objects parameters, play sequences in time machine, adapt speed or time position in a sequence with the fader...
 
-For global support on how to use Chataigne and its modules, or this example project, please visit the forum : http://benjamin.kuperberg.fr/chataigne/forum or join us on Discord : https://discord.com/invite/ngnJ5z my contact there is also "madees".
-Any feedback or ideas on improvements are welcome !
+For global support on how to use Chataigne and its modules, or this example project, please visit the forum : http://benjamin.kuperberg.fr/chataigne/forum or join us on Discord : https://discord.com/invite/ngnJ5z 
+
+My contact on Discord is also "madees". Any feedback or ideas on improvements or features are welcome !
