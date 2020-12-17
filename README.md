@@ -15,17 +15,18 @@ Work in progress to have autoamtic update rate setting (in the TouchOSC module),
 
 ## How to setup ?
 1. First install DS100 OSC module (in Files/Community module manager).
-2. Next, install CL/QL SCP module (unzip and copy the CL/QL module master folder in your ..Chataigne/modules/ folder).
+2. Next, install CL/QL SCP module (as it is not in Community modules, manually unzip and copy the CL/QL module master folder in your ..Chataigne/modules/ folder).
 3. Open the noisette in Chatainge.
 4. IP of DS100 device should be setup accordingly in DS100 module OSC output settings.
 5. As CL/QL SCP is just sending in broadcast, nothing to set on the console except network mask to be on the same domain (if you want to use CL/QL module the other way around, you should set Chataigne CL/QL module OSC output to the console remote IP).
 6. In TouchOSC settings, set the "Connections" OSC IP adress to Chataigne one.
 7. The other way around, in Chataigne TouchOSC module, OSC output set it to Ipad IP.
 
-You can add others mappings, to changes parameters like Object ID (to follow channel select on mixing desk), Master level, EnSpace sends ect. to follow mixing desk faders...
-Simple example is provided: with CL/QL Yamaha module, it gather "Last Cue" as channel select, "Mono output fader" as DS100 master output level and surround paner channel parameters map to one object (only setup with channel #1, for proof of concept, you can copy paste the State container to add more channels).
+You may add others mappings, a simple example is provided: with CL/QL Yamaha module, it gather "Last Cue" as channel selection on TouchOSC, "Mono output fader" mapped to DS100 master output level (WaRNING: it ovewrite all DS100 output levels!) and surround paner channel parameters map to one object (only setup with channel #1, for proof of concept, you can copy paste the State container to add more simultaneous channels control from console surround panners).
 
 Yamaha CL/QL module is based on https://github.com/l-r-r/Yamaha-CLQL-Chataigne-Module, adapted to add last cue, input channels surround panner parameters.
 Please check that the Chataigne CL/QL module is using correct console model and IP for its remote port.
+
+User defined 4x Push, 4x Toggle, 1 fader are there to add more Chataigne control. Not done in the file, but typically to activate Generators mapped to sound objects parameters, play sequences in time machine, adapt speed or time position in a sequence with the fader...
 
 For global support on how to use Chataigne and its modules, or this example project, please visit the forum : http://benjamin.kuperberg.fr/chataigne/forum or join me on Discord : https://discord.com/invite/ngnJ5z my contact there is also "madees".
