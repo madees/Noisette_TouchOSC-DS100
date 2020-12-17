@@ -14,12 +14,12 @@ It is now including also CL/QL>DS100 as another mapping example, and additionnal
 5. In TouchOSC settings, set the "Connections" OSC IP adress/port to Chataigne one.
 6. The other way around, in Chataigne TouchOSC module, OSC output/port set it to Ipad IP.
 
-# WARNING !
+### WARNING !
 This version can still self oscillate (feedback with bi directionnal TouchOSC module mappings), if network speed is very slow (when the Rx values feedback from DS100 are received in Chataigne, map back to TouchOSC (usually due to WIFI big lag) AFTER a new values is sent by TouchOSC, the Noisette may oscillate infinitely between those two values).
 You can find this setting in TouchOSC module/Scripts container, or there is a shortcut on DashBoard, default is 20Hz (=50 ms period, max round trip time of coms should be less).
 If you encountered loops, first clic on the button in dashboard: it will pause Rx for one period. If loops start again, reduce the update rate until it's stable. Minimum update rate of 1 means 1 to 2 second pause, slows a lot Rx but very safe margin, and still usable if you're essentially using TouchOSC to Tx parameters instead of monitoring. Anyway, you can also turn off the whole "DS100>TouchOSC" mapping container, but of course it will be one way only, TouchOSC>DS100.
 
-# Optionnally for CL/QL>DS100 remote:
+### Optionnally, CL/QL>DS100 remote setup
 7. In the Chataigne CL/QL module, check the "model" accordingly to Yamaha hardware.
 8. Set the console in "Surround" mode. We won't use 5.1 consoles buses but only Direct outs+Surround panner metadatas.
 9. As CL/QL SCP is just sending in broadcast, nothing to set on the console except network mask to be on the same domain in its remote config.
@@ -31,6 +31,7 @@ Another mappings container send surround paner channel parameters to one object 
 Yamaha CL/QL Chataigne module is based on https://github.com/l-r-r/Yamaha-CLQL-Chataigne-Module, adapted to add last cue and input channels surround panner parameters.
 Please check that the Chataigne CL/QL module is using correct console model and IP for its remote port.
 
+## More to come
 User defined 4x Push, 4x Toggle, 1 fader are there to add more Chataigne control. Not done in the file, but typically to activate Generators mapped to sound objects parameters, play sequences in time machine, adapt speed or time position in a sequence with the fader...
 
 For global support on how to use Chataigne and its modules, or this example project, please visit the forum : http://benjamin.kuperberg.fr/chataigne/forum or join me on Discord : https://discord.com/invite/ngnJ5z my contact there is also "madees".
