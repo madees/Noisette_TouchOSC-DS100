@@ -42,4 +42,4 @@ User defined 4x Push, 4x Toggle, 1 fader are there to add more Chataigne control
 
 For global support on how to use Chataigne and its modules, or this example project, please visit the forum : http://benjamin.kuperberg.fr/chataigne/forum or join us on Discord : https://discord.com/invite/ngnJ5z 
 
-If you need any help or foind some errors in log, my contact on Discord is also "madees". Any feedback or ideas on improvements or features are welcome !
+If you need any help, my contact on Discord is also "madees". Any feedback or ideas on improvements or features are welcome !
