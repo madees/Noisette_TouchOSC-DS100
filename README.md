@@ -9,7 +9,7 @@ It is now including also CL/QL>DS100 as another mapping example, and additionnal
 ## How to setup TouchOSC<>DS100
 1. First install DS100 OSC module (in Chataigne/Files menu/Community module manager...). You can also download the module folder from https://github.com/madees/dbaudio-DS100-Chataigne-Module/archive/master.zip and manually unzip and copy the DS100 OSC module master folder in your ..Chataigne/modules/ folder).
 2. Next, install CL/QL SCP module (as it is not in Community modules, manually unzip and copy the CL/QL module master folder in your ..Chataigne/modules/ folder).
-3. Download the .touchosc file and sync it to your iPad TouchOSC.
+3. Download the .touchosc file and sync it with TouchOSC editor to your iPad TouchOSC.
 4. Download the .noisette and TouchOSC.js in a folder.
 5. Launch Chataigne and open this .noisette.
 6. IP of DS100 device should be setup accordingly in DS100 module OSC output settings.
@@ -42,4 +42,4 @@ User defined 4x Push, 4x Toggle, 1 fader are there to add more Chataigne control
 
 For global support on how to use Chataigne and its modules, or this example project, please visit the forum : http://benjamin.kuperberg.fr/chataigne/forum or join us on Discord : https://discord.com/invite/ngnJ5z 
 
-My contact on Discord is also "madees". Any feedback or ideas on improvements or features are welcome !
+If you need any help or foind some errors in log, my contact on Discord is also "madees". Any feedback or ideas on improvements or features are welcome !
