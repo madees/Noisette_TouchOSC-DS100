@@ -1,7 +1,7 @@
 # Noisette_TouchOSC-DS100
 Example of Chataigne DS100 OSC Module usage.
 
-A simple interface to act as a "side-car" for mixing console with Soundscape sound object controller.
+A simple interface to act as a "side-car" for mixing console with iPad & touchOSC as bi-directionnal Soundscape sound object controller.
 
 For latest DS100 OSC module version (1.4.1), I've reviewed the previous example DS100<>TouchOSC noisette.
 It is now including also CL/QL>DS100 as another mapping example, and additionnal User Defined buttons and fader.
