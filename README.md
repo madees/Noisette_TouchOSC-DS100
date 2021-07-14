@@ -1,10 +1,11 @@
 # Noisette_TouchOSC-DS100
 Example of Chataigne DS100 OSC Module usage.
 
-A simple interface to act as a "side-car" for mixing console with iPad & touchOSC as bi-directionnal Soundscape sound object controller.
+A simple interface to act as a "side-car" for any mixing console with iPad & touchOSC as bi-directionnal Soundscape sound object controller.
 
-For latest DS100 OSC module version (1.4.1), I've reviewed the previous example DS100<>TouchOSC noisette.
-It is now including also CL/QL>DS100 as another mapping example, and additionnal User Defined buttons and fader.
+For latest DS100 OSC module version (1.4.1) and Chataigne 1.8, I've reviewed the previous example DS100<>TouchOSC noisette.
+
+It is now including also Yamaha CL/QL interface with DS100, surround panner parameters as multiplex mapping example.
 
 ## How to setup TouchOSC<>DS100
 1. First install DS100 OSC module (in Chataigne/Files menu/Community module manager...). You can also download the module folder from https://github.com/madees/dbaudio-DS100-Chataigne-Module/archive/master.zip and manually unzip and copy the DS100 OSC module master folder in your ..Chataigne/modules/ folder).
@@ -26,15 +27,15 @@ Minimum update rate of 1 means 1 to 2 second pause, slows a lot Rx but very safe
 
 ### Optionnally, CL/QL>DS100 remote setup
 9. In the Chataigne CL/QL module, check the "model" accordingly to Yamaha hardware.
-10. Set the console in "Surround" mode. We won't use 5.1 consoles buses but only Direct outs+Surround panner metadatas.
+10. Set the console in "Surround" mode. We won't use the 5.1 consoles buses, but only Direct outs and Surround panner metadatas.
 11. As CL/QL SCP is just sending in broadcast, nothing to set on the console except network mask to be on the same domain in its remote config.
 12. In Chataigne CL/QL Module, "Remote Host" output set to the console remote IP.
 
-A first mappings container "CL>DS100" is provided, it gather "Last Cue" as channel selection on TouchOSC, "Mono output fader" mapped to DS100 master output level (WARNING: it ovewrite all DS100 output levels! turn it off if you think it isn't a good idea).
+A first mappings container "CL/QL >DS100 Globals" is provided, it gather "Last Cue" as channel selection on TouchOSC, "Mono output fader" mapped to DS100 master output level (WARNING: it ovewrite all DS100 output levels! turn it off if you think it isn't a good idea).
 
-Another mappings container send surround paner channel parameters to one object (only setup with channel #1, for proof of concept, you can copy paste the State container and adapt channel numbers to add more simultaneous channels control from console surround panners).
+Another container with Multiplex Mappings send first 64 channel parameters from console surround paner to DS100 objects.
 
-Yamaha CL/QL Chataigne module is based on https://github.com/l-r-r/Yamaha-CLQL-Chataigne-Module, adapted to add last cue and input channels surround panner parameters.
+Yamaha CL/QL Chataigne module is based on https://github.com/l-r-r/Yamaha-CLQL-Chataigne-Module, adapted here to gather last cue and input channels surround panner parameters.
 Please check that the Chataigne CL/QL module is using correct console model and IP for its remote port.
 
 ## More to come
