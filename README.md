@@ -8,7 +8,7 @@ For latest DS100 OSC module version (1.4.1) and Chataigne 1.8, I've reviewed the
 It is now including also Yamaha CL/QL interface with DS100, surround panner parameters as multiplex mapping example.
 
 > [!NOTE]  
-> This project used TouchOSC mk1, and is now deprecated. With new TouchOSC mk2, there are script features, so Chataigne isn't needed anymore to have bi-directionnal features. If you need help to upgrade this Noisette or a TouchOSC mk2 standalone equivalent, feel free to contact me !
+> This project used TouchOSC mk1, and is now deprecated. With new TouchOSC mk2, there is an embedded scripting engine, so Chataigne isn't needed anymore to have bi-directionnal features. If you need help to upgrade this Noisette or a TouchOSC mk2 standalone equivalent, feel free to contact me !
 
 ## How to setup TouchOSC<>DS100
 1. First install DS100 OSC module (in Chataigne/Files menu/Community module manager...). You can also download the module folder from https://github.com/madees/dbaudio-DS100-Chataigne-Module/archive/master.zip and manually unzip and copy the DS100 OSC module master folder in your ..Chataigne/modules/ folder).
